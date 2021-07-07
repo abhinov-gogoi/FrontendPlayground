@@ -1,9 +1,9 @@
 // Primitive Data Types vs Reference Data Types
 console.log("Primitive Data Types vs Reference Data Types")
-// Primitive -> String, Number, Boolean, Null, Undefined, Symbols(ES6)
-// Reference -> Arrays, ObjectLiterals, Functions, Dates, Anything Else...
 
-//-------------------- PRIMITIVE-----------------------------
+
+//--------------------     PRIMITIVE      -----------------------------
+// Primitive -> String, Number, Boolean, Null, Undefined, Symbols(ES6)
 
 // String
 const name = "Jon Doe";
@@ -29,3 +29,22 @@ console.log(typeof test);
 const sym = Symbol();
 console.log(typeof sym);
 
+// ---------------- REFERENCE TYPES - objects ---------------------
+// Reference -> Arrays, ObjectLiterals, Functions, Dates, Anything Else...
+
+// Array 
+const arr = [1, 2, "hello", true];
+console.log(typeof arr);
+
+// object literal 
+const person = {
+  name : "Abhi",
+  age: 24,
+  isAwesome: true
+}
+console.log(typeof person);
+
+// Date
+const date = new Date();
+console.log(date);
+console.log(typeof date);
