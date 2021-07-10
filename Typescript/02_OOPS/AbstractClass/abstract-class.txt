@@ -1,0 +1,4 @@
+An abstract class represents a general concept
+
+Cant create an instance of an abstract class
+Abstract class can have abstract methods which has to be implemented by concrete subclasses
