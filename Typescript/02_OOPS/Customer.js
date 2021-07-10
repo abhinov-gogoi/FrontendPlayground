@@ -1,3 +1,4 @@
+"use strict";
 var Customer = /** @class */ (function () {
     function Customer(first_name, last_name) {
         this.firstName = first_name;

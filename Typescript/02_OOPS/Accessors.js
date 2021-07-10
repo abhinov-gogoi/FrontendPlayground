@@ -1,13 +1,11 @@
 "use strict";
-// ERROR -> Accessors are only available when targeting ECMAScript 5 and higher
-// use --target es5 compiler flag while compiling (tsc --target es5 Accessors.ts)
-// OR we can put all compiler flags in tsconfig file
-// tsc --init generates the tsconfig.json file
 var Customer2 = /** @class */ (function () {
-    function Customer2(name, age) {
-        this.name = name;
-        this._age = age;
+    function Customer2() {
+        this.name = "";
+        // SPECIAL Accessors in Typescript (available only after --target es5)
+        this._age = 0;
     }
+    // Getters / Setters just like JAVA
     Customer2.prototype.getName = function () {
         return this.name;
     };
@@ -26,7 +24,7 @@ var Customer2 = /** @class */ (function () {
     });
     return Customer2;
 }());
-var customer2 = new Customer2("John Doe", 33);
+var customer2 = new Customer2();
 customer2.setName("Abhinov");
 console.log(customer2.getName());
 customer2.age = 24;

@@ -1,8 +1,8 @@
 class Customer2 {
-    
-    // Getters / Setters just like JAVA
-    private name: string;    
+  
+    private name: string = "";    
 
+    // Getters / Setters just like JAVA
     public getName(): string {
         return this.name;
     }
@@ -11,9 +11,11 @@ class Customer2 {
         this.name = name;
     }
 
-    // SPECIAL Accessors in Typescript (available only after --target es5)
-    private _age: number;
 
+
+
+    // SPECIAL Accessors in Typescript (available only after --target es5)
+    private _age: number = 0;
 
     public get age(): number {
         return this._age;

@@ -1,0 +1,8 @@
+// ERROR -> Accessors are only available when targeting ECMAScript 5 and higher
+
+// use --target es5 compiler flag while compiling (tsc --target es5 Accessors.ts)
+// OR we can put all compiler flags in tsconfig file
+
+// tsc --init generates the tsconfig.json file
+
+
