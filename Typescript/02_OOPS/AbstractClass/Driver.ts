@@ -12,6 +12,6 @@ shapes.push(myRectangle);
 for(let shape of shapes) {
     console.log(shape.getInfo())
     console.log(shape.calculateArea());
-    console.log()
+    console.log();
 }
 
